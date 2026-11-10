@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sencia Joias · Prata 950 e ouro 18k</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Sencia Joias: joias femininas e alianças em prata 950 e ouro 18k, feitas sob medida no Rio de Janeiro e enviadas para todo o Brasil. Em cada peça, uma memória eterna.">
+<meta property="og:title" content="Sencia Joias · Em cada peça, uma memória eterna">
+<meta property="og:description" content="Joias e alianças em prata 950 e ouro 18k, sob medida, do Rio de Janeiro para todo o Brasil.">
+<meta property="og:image" content="https://lucasjaxr6-ctrl.github.io/sencia-joias/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F7F1E6">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Italiana&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --creme:#F7F1E6; --marfim:#FBF8F2; --areia:#EADFCD; --areia2:#DCCDB5; --taupe:#9C8C76;
+  --navy:#2B305E; --navy2:#1F2347; --ouro:#B8975A; --ouro2:#D9BF8C; --tinta:#2A2622; --mudo:#7A6F62;
+  --serif:"Cormorant Garamond",Georgia,serif; --marca:"Italiana","Cormorant Garamond",serif; --txt:"Jost",system-ui,sans-serif;
+  --w:1240px; --ease:cubic-bezier(.22,.7,.15,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px;overflow-x:clip}
+body{font-family:var(--txt);font-weight:300;color:var(--tinta);background:var(--creme);line-height:1.7;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+:focus-visible{outline:1px solid var(--navy);outline-offset:4px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 36px;position:relative}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-.005em;color:var(--navy)}
+h2{font-size:clamp(40px,5.2vw,72px)}
+h2 em,h1 em{font-style:italic;color:var(--ouro)}
+.sobre-tit{font-size:11px;letter-spacing:.38em;text-transform:uppercase;color:var(--taupe);font-weight:400;display:inline-flex;align-items:center;gap:14px}
+.sobre-tit::before{content:"";width:34px;height:1px;background:currentColor}
+.lead{font-size:18px;color:var(--mudo);max-width:52ch}
+section{position:relative;padding:clamp(90px,11vw,150px) 0}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:17px 30px;border-radius:100px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:400;transition:background .4s var(--ease),color .4s,border-color .4s,transform .4s var(--ease);position:relative;overflow:hidden}
+.btn svg{width:16px;height:16px}
+.btn-navy{background:var(--navy);color:var(--marfim)}
+.btn-navy::before{content:"";position:absolute;inset:0;background:var(--ouro);transform:translateY(101%);transition:transform .55s var(--ease);border-radius:inherit}
+.btn-navy:hover::before{transform:none}
+.btn>*{position:relative}
+.btn-linha{border:1px solid rgba(43,48,94,.35);color:var(--navy)}
+.btn-linha:hover{border-color:var(--navy);background:var(--navy);color:var(--marfim)}
+.estrela{display:inline-block;color:var(--ouro);animation:brilha 3.2s ease-in-out infinite}
+@keyframes brilha{0%,100%{opacity:.35;transform:scale(.8) rotate(0)}50%{opacity:1;transform:scale(1.1) rotate(45deg)}}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .5s,box-shadow .5s,padding .5s}
+header.solid{background:rgba(247,241,230,.9);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(43,48,94,.08)}
+header .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:92px;transition:height .5s}
+header.solid .wrap{height:72px}
+.menu{display:flex;gap:28px;white-space:nowrap;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--navy)}
+.menu a{position:relative;padding:4px 0}
+.menu a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--ouro);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.menu a:hover::after{transform:scaleX(1);transform-origin:left}
+.marca{display:flex;align-items:center;gap:12px;color:var(--navy)}
+.marca svg{height:44px;width:auto;transition:height .5s}
+header.solid .marca svg{height:36px}
+.marca span{font-family:var(--marca);font-size:26px;letter-spacing:.32em;line-height:1;padding-top:4px}
+.dir{display:flex;justify-content:flex-end;align-items:center;gap:22px}
+.dir .btn{padding:13px 22px;font-size:11px}
+.ig{width:38px;height:38px;border-radius:50%;border:1px solid rgba(43,48,94,.25);display:flex;align-items:center;justify-content:center;color:var(--navy);transition:all .4s}
+.ig:hover{background:var(--navy);color:var(--marfim)}
+.ig svg{width:16px;height:16px}
+.hamb{display:none;width:44px;height:44px;align-items:center;justify-content:center;color:var(--navy)}
+.hamb svg{width:26px;height:26px}
+
+.so-mob{display:none}
+/* hero */
+.hero{min-height:100svh;padding:130px 0 70px;display:flex;align-items:center;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,80px);align-items:center;width:100%}
+.hero h1{font-size:clamp(54px,7.4vw,112px);line-height:.98;margin:26px 0 28px}
+.hero h1 .l{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .l>span{display:block;transform:translateY(110%);animation:sobe-l 1.4s var(--ease) forwards;animation-delay:var(--d)}
+@keyframes sobe-l{to{transform:none}}
+.hero p.lead{margin-bottom:38px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.fade{opacity:0;transform:translateY(18px);animation:fade 1.2s var(--ease) forwards;animation-delay:var(--d)}
+@keyframes fade{to{opacity:1;transform:none}}
+.selos{display:flex;gap:30px;margin-top:52px;flex-wrap:wrap}
+.selos div{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe)}
+.selos b{display:block;font-family:var(--serif);font-weight:500;font-size:30px;letter-spacing:0;text-transform:none;color:var(--navy);line-height:1.1}
+.hero-vis{position:relative;height:min(78vh,720px);justify-self:end;width:100%;max-width:520px}
+.arco{position:absolute;overflow:hidden;border-radius:999px 999px 6px 6px;background:var(--areia)}
+.arco video,.arco img{width:100%;height:100%;object-fit:cover}
+.hv-1{inset:0 0 0 14%;clip-path:inset(100% 0 0 0 round 999px 999px 6px 6px);animation:abre 1.8s var(--ease) forwards .3s}
+@keyframes abre{to{clip-path:inset(0 0 0 0 round 999px 999px 6px 6px)}}
+.hv-1 video{transform:scale(1.18);animation:zoom 2.6s var(--ease) forwards .3s}
+@keyframes zoom{to{transform:scale(1)}}
+.hv-2{position:absolute;left:0;bottom:8%;width:42%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid var(--creme);box-shadow:0 30px 60px -30px rgba(43,48,94,.45);opacity:0;transform:scale(.7);animation:pop 1.4s var(--ease) forwards 1.2s}
+.hv-2 img{width:100%;height:100%;object-fit:cover}
+@keyframes pop{to{opacity:1;transform:none}}
+.hv-anel{position:absolute;right:-26px;top:10%;width:150px;height:150px;pointer-events:none;color:var(--ouro);animation:giro 26s linear infinite}
+.hv-anel text{font-family:var(--txt);font-size:9.6px;letter-spacing:.42em;fill:var(--navy);text-transform:uppercase}
+@keyframes giro{to{transform:rotate(360deg)}}
+.hv-estrela{position:absolute;font-size:22px}
+.rolar{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--taupe)}
+.rolar i{width:1px;height:46px;background:linear-gradient(var(--taupe),transparent);position:relative;overflow:hidden}
+.rolar i::after{content:"";position:absolute;left:0;top:-40%;width:1px;height:40%;background:var(--navy);animation:desce 2.2s var(--ease) infinite}
+@keyframes desce{to{top:100%}}
+
+/* faixa */
+.faixa{border-top:1px solid rgba(43,48,94,.12);border-bottom:1px solid rgba(43,48,94,.12);overflow:hidden;padding:22px 0;background:var(--marfim)}
+.trilho{display:flex;width:max-content;animation:desliza 46s linear infinite}
+.trilho span{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.4vw,32px);color:var(--navy);white-space:nowrap;display:flex;align-items:center;gap:40px;padding-right:40px}
+.trilho span::after{content:"✦";font-style:normal;font-size:.5em;color:var(--ouro)}
+@keyframes desliza{to{transform:translateX(-50%)}}
+
+/* manifesto */
+.manif .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,7vw,110px);align-items:center}
+.manif-foto{position:relative}
+.manif-foto .arco{position:relative;aspect-ratio:3/4}
+.manif-foto .arco img{transform:scale(1.15) translateY(var(--py,0));transition:transform .1s linear}
+.manif-foto .tag{position:absolute;right:-20px;bottom:40px;background:var(--marfim);padding:16px 22px;box-shadow:0 20px 40px -24px rgba(43,48,94,.4);font-family:var(--serif);font-style:italic;font-size:19px;color:var(--navy)}
+.manif-foto .tag small{display:block;font-family:var(--txt);font-style:normal;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--taupe)}
+.citacao{font-family:var(--serif);font-size:clamp(26px,2.6vw,36px);line-height:1.3;color:var(--navy);margin:26px 0 24px;font-weight:400}
+.citacao em{color:var(--ouro)}
+.assin{display:flex;align-items:center;gap:16px;margin-top:30px}
+.assin svg{width:46px;height:auto;color:var(--navy)}
+.assin span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--taupe)}
+.assin b{display:block;font-family:var(--serif);font-style:italic;font-weight:400;font-size:22px;letter-spacing:0;text-transform:none;color:var(--navy)}
+
+/* coleção */
+.colecao{background:var(--marfim)}
+.col-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:56px}
+.prods{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.prod{display:flex;flex-direction:column}
+.prod .foto{position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:200px 200px 4px 4px;background:var(--areia)}
+.prod .foto img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease),opacity .6s}
+.prod:hover .foto img{transform:scale(1.07)}
+.prod .foto .metal{position:absolute;top:22px;left:50%;transform:translateX(-50%);background:rgba(251,248,242,.92);padding:6px 14px;border-radius:30px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);white-space:nowrap}
+.prod .foto .ver{position:absolute;left:14px;right:14px;bottom:14px;background:var(--navy);color:var(--marfim);text-align:center;padding:13px;border-radius:40px;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;transform:translateY(130%);transition:transform .6s var(--ease)}
+.prod:hover .foto .ver{transform:none}
+.prod h3{font-size:25px;margin:20px 0 4px}
+.prod p{font-size:14px;color:var(--mudo)}
+.prod .preco{margin-top:8px;font-family:var(--serif);font-size:19px;color:var(--navy)}
+.prod .preco small{font-family:var(--txt);font-size:12px;color:var(--taupe);margin-left:4px}
+.pagto{margin-top:50px;display:flex;justify-content:center;gap:clamp(20px,5vw,60px);flex-wrap:wrap;padding:24px 0;border-top:1px solid rgba(43,48,94,.1);border-bottom:1px solid rgba(43,48,94,.1);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mudo)}
+.pagto span{display:flex;align-items:center;gap:12px}
+.pagto svg{width:20px;height:20px;color:var(--ouro)}
+
+/* alianças */
+.alian{background:var(--navy);color:var(--marfim);overflow:hidden}
+.alian h2{color:var(--marfim)}
+.alian h2 em{color:var(--ouro2)}
+.alian .sobre-tit{color:var(--ouro2)}
+.alian .lead{color:#C9C8DA}
+.al-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,90px);align-items:center}
+.al-vis{position:relative;height:min(80vh,700px)}
+.al-vis .arco{position:absolute;inset:0 18% 0 0;background:var(--navy2)}
+.al-vis .mini{position:absolute;right:0;width:40%;aspect-ratio:3/4;overflow:hidden;border-radius:4px;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);border:6px solid var(--navy)}
+.al-vis .mini img{width:100%;height:100%;object-fit:cover}
+.al-vis .m1{top:6%}.al-vis .m2{bottom:4%}
+.al-lista{list-style:none;margin:34px 0 38px;display:grid;gap:0;border-top:1px solid rgba(255,255,255,.14)}
+.al-lista li{display:grid;grid-template-columns:44px 1fr;gap:10px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.al-lista li span{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--ouro2)}
+.al-lista b{display:block;font-family:var(--serif);font-weight:400;font-size:23px;color:var(--marfim)}
+.al-lista small{font-size:14.5px;color:#B8B7CB}
+.alian .btn-navy{background:var(--marfim);color:var(--navy)}
+.alian .btn-navy:hover{color:var(--marfim)}
+.brilhos{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.brilhos i{position:absolute;color:var(--ouro2);font-style:normal;animation:brilha var(--t) ease-in-out infinite;animation-delay:var(--dl)}
+
+/* sob medida */
+.proc-head{text-align:center;max-width:760px;margin:0 auto 60px}
+.proc-head .lead{margin:22px auto 0}
+.proc-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.proc-video{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:16/10;background:var(--areia)}
+.proc-video video{width:100%;height:100%;object-fit:cover}
+.proc-video .selo-v{position:absolute;left:18px;bottom:18px;background:rgba(251,248,242,.93);padding:10px 16px;border-radius:30px;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--navy);display:flex;align-items:center;gap:8px}
+.proc-video .selo-v i{width:7px;height:7px;border-radius:50%;background:#C0392B;animation:pisca 1.4s infinite}
+@keyframes pisca{50%{opacity:.25}}
+.passos{list-style:none;position:relative;display:grid;gap:30px;padding-left:38px}
+.passos::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:1px;background:var(--areia2)}
+.passos .linha{position:absolute;left:8px;top:8px;width:1px;height:calc(100% - 16px);background:var(--ouro);transform:scaleY(0);transform-origin:top;transition:transform 2.2s var(--ease) .3s}
+.passos.in .linha{transform:scaleY(1)}
+.passos li{position:relative}
+.passos li::before{content:"";position:absolute;left:-36px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--creme);border:1px solid var(--ouro);transition:background .5s;transition-delay:var(--d)}
+.passos.in li::before{background:var(--ouro)}
+.passos small{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--taupe)}
+.passos h3{font-size:28px;margin:4px 0 6px}
+.passos p{font-size:15.5px;color:var(--mudo)}
+
+/* histórias */
+.hist{background:var(--marfim)}
+.hist-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.hist-head blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(24px,2.4vw,32px);line-height:1.35;color:var(--navy)}
+.hist-head blockquote small{display:block;font-family:var(--txt);font-style:normal;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe);margin-top:14px}
+.mural{columns:4;column-gap:18px}
+.mural figure{break-inside:avoid;margin-bottom:18px;overflow:hidden;border-radius:4px;cursor:zoom-in;position:relative;background:var(--areia)}
+.mural img{width:100%;height:auto;transition:transform 1.2s var(--ease),filter .6s}
+.mural figure:hover img{transform:scale(1.05)}
+.mural figure.fb{background:var(--creme)}
+.credito{margin-top:18px;font-size:12px;letter-spacing:.14em;color:var(--taupe);text-align:right}
+
+/* reels */
+.reels{overflow:hidden}
+.reels-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.reel-trilho{display:flex;gap:22px;padding:0 max(36px,calc((100% - var(--w))/2 + 36px));overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:10px}
+.reel-trilho::-webkit-scrollbar{display:none}
+.reel{flex:none;width:clamp(220px,22vw,290px);aspect-ratio:9/16;border-radius:22px;overflow:hidden;position:relative;scroll-snap-align:start;background:var(--areia);box-shadow:0 30px 60px -36px rgba(43,48,94,.55);transition:transform .7s var(--ease)}
+.reel:nth-child(even){transform:translateY(40px)}
+.reel:hover{transform:translateY(-8px)}
+.reel:nth-child(even):hover{transform:translateY(32px)}
+.reel video{width:100%;height:100%;object-fit:cover}
+.reel figcaption{position:absolute;left:0;right:0;bottom:0;padding:50px 18px 18px;background:linear-gradient(transparent,rgba(31,35,71,.75));color:var(--marfim);font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.2}
+.reel figcaption small{display:block;font-family:var(--txt);font-style:normal;font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.8;margin-bottom:4px}
+.reel-nav{display:flex;gap:10px}
+.reel-nav button{width:52px;height:52px;border-radius:50%;border:1px solid rgba(43,48,94,.3);display:flex;align-items:center;justify-content:center;color:var(--navy);transition:all .4s}
+.reel-nav button:hover{background:var(--navy);color:var(--marfim)}
+.reel-nav svg{width:18px;height:18px}
+
+/* entregas */
+.envio{background:var(--areia);overflow:hidden}
+.env-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,90px);align-items:center}
+.env-fotos{position:relative;height:min(74vh,620px)}
+.env-fotos .a{position:absolute;left:0;top:0;width:58%;height:84%;border-radius:4px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(43,48,94,.5)}
+.env-fotos .b{position:absolute;right:0;bottom:0;width:50%;height:70%;border-radius:200px 200px 4px 4px;overflow:hidden;border:8px solid var(--areia)}
+.env-fotos img,.env-fotos video{width:100%;height:100%;object-fit:cover}
+.env-fotos .carimbo{position:absolute;left:46%;top:6%;width:120px;height:120px;color:var(--navy);animation:giro 30s linear infinite reverse}
+.env-lista{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}
+.env-lista div{border-top:1px solid rgba(43,48,94,.2);padding-top:16px}
+.env-lista b{display:block;font-family:var(--serif);font-weight:400;font-size:22px;color:var(--navy)}
+.env-lista small{font-size:14px;color:var(--mudo)}
+
+/* encomendar */
+.enc{text-align:center;overflow:hidden}
+.enc .mono-grande{width:120px;height:auto;color:var(--navy);margin:0 auto 26px;display:block}
+.enc h2{font-size:clamp(46px,6.6vw,96px);max-width:14ch;margin:0 auto}
+.enc .lead{margin:24px auto 40px}
+.enc-passos{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:0 auto 50px;text-align:left}
+.enc-passos div{background:var(--marfim);padding:26px 24px;border-radius:4px;transition:transform .6s var(--ease),box-shadow .6s}
+.enc-passos div:hover{transform:translateY(-6px);box-shadow:0 30px 50px -36px rgba(43,48,94,.5)}
+.enc-passos span{font-family:var(--serif);font-style:italic;font-size:40px;color:var(--ouro);line-height:1}
+.enc-passos b{display:block;font-family:var(--serif);font-weight:400;font-size:23px;color:var(--navy);margin:10px 0 4px}
+.enc-passos small{font-size:14.5px;color:var(--mudo)}
+.btn-grande{padding:22px 40px;font-size:13px}
+
+footer{background:var(--navy2);color:#BAB9CC;padding:70px 0 34px;font-size:14px;position:relative;overflow:hidden}
+.ft{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
+.ft .marca{color:var(--marfim)}
+.ft p{margin-top:16px;max-width:34ch}
+.ft h4{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--ouro2);margin-bottom:16px;font-weight:400}
+.ft ul{list-style:none;display:grid;gap:10px}
+.ft a:hover{color:var(--marfim)}
+.copy{padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px;letter-spacing:.08em}
+.ft-mono{position:absolute;right:-40px;bottom:-60px;width:320px;color:rgba(255,255,255,.04);pointer-events:none}
+
+.wpp{position:fixed;right:22px;bottom:22px;z-index:70;width:58px;height:58px;border-radius:50%;background:var(--navy);color:var(--marfim);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px -10px rgba(31,35,71,.6);transition:transform .4s var(--ease),background .4s}
+.wpp:hover{transform:scale(1.08);background:#25D366}
+.wpp svg{width:28px;height:28px}
+.wpp::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid rgba(43,48,94,.3);animation:onda 3s ease-out infinite}
+@keyframes onda{0%{transform:scale(.9);opacity:1}100%{transform:scale(1.4);opacity:0}}
+
+.lb{position:fixed;inset:0;z-index:100;background:rgba(31,35,71,.92);display:none;align-items:center;justify-content:center;padding:60px 20px}
+.lb.on{display:flex;animation:fade .5s ease}
+.lb img{max-height:86vh;max-width:min(1000px,100%);border-radius:4px}
+.lb button{position:absolute;top:18px;right:18px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);color:#fff;display:flex;align-items:center;justify-content:center}
+.lb button svg{width:20px;height:20px}
+
+/* revelar */
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1.2s var(--ease),transform 1.4s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.cortina{clip-path:inset(100% 0 0 0 round 999px 999px 6px 6px);transition:clip-path 1.8s var(--ease);transition-delay:var(--d,0s)}
+.cortina.in{clip-path:inset(0 0 0 0 round 999px 999px 6px 6px)}
+.cortina-r{clip-path:inset(0 0 100% 0);transition:clip-path 1.6s var(--ease);transition-delay:var(--d,0s)}
+.cortina-r.in{clip-path:inset(0 0 0 0)}
+h2.split .p{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-bottom:-.08em}
+h2.split .p>span{display:inline-block;transform:translateY(110%);transition:transform 1.3s var(--ease);transition-delay:calc(var(--i)*70ms + .1s)}
+.rv.in h2.split .p>span,h2.split.in .p>span{transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv,.fade{opacity:1;transform:none}.hero h1 .l>span,h2.split .p>span{transform:none}.cortina,.cortina-r,.hv-1{clip-path:none}.hv-2{opacity:1;transform:none}}
+
+/* responsivo */
+@media (max-width:1060px){
+  header .wrap{grid-template-columns:auto 1fr auto}
+  .menu{position:fixed;inset:72px 0 auto 0;flex-direction:column;gap:0;background:var(--creme);padding:10px 36px 30px;box-shadow:0 30px 40px -30px rgba(43,48,94,.4);transform:translateY(-10px);opacity:0;pointer-events:none;transition:all .4s var(--ease);font-size:13px}
+  .menu.on{transform:none;opacity:1;pointer-events:auto}
+  .menu a{padding:16px 0;border-bottom:1px solid rgba(43,48,94,.1)}
+  .hamb{display:flex}
+  .so-mob{display:block}
+  .marca{justify-self:center}
+  .dir .btn{display:none}
+  header{background:rgba(247,241,230,.9);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+  header .wrap,header.solid .wrap{height:72px}
+  .hero .wrap,.manif .wrap,.al-grid,.proc-grid,.env-grid,.hist-head{grid-template-columns:1fr}
+  .hero{padding-top:110px}
+  .hero-vis{justify-self:center;height:min(70vh,560px);max-width:440px}
+  .prods{grid-template-columns:1fr 1fr}
+  .mural{columns:3}
+  .al-vis{height:min(76vh,600px)}
+  .manif-foto{max-width:460px}
+}
+@media (max-width:640px){
+  .wrap{padding:0 22px}
+  .marca span{font-size:20px;letter-spacing:.26em}
+  .marca svg,header.solid .marca svg{height:32px}
+  .ig{display:none}
+  .ctas{flex-direction:column}.ctas .btn{justify-content:center}
+  .selos{gap:20px}.selos b{font-size:24px}
+  .hv-anel{width:110px;height:110px;right:-6px}
+  .prods{gap:18px 14px}
+  .prod h3{font-size:20px}
+  .prod .foto .ver{transform:none;padding:10px;font-size:9.5px}
+  .mural{columns:2;column-gap:12px}.mural figure{margin-bottom:12px}
+  .env-lista{grid-template-columns:1fr}
+  .enc-passos{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr}
+  .reel:nth-child(even){transform:none}
+  .rolar{display:none}
+  .manif-foto .tag{right:0}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="zap" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></symbol>
+  <symbol id="insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></g></symbol>
+  <symbol id="seta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" d="M4 12h16M14 6l6 6-6 6"/></symbol>
+</defs></svg>
+
+<header id="topo">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#colecao">Coleção</a>
+      <a href="#aliancas">Alianças</a>
+      <a href="#sob-medida">Sob medida</a>
+      <a href="#historias">Histórias</a>
+      <a href="#encomendar" class="so-mob">Encomendar</a>
+    </nav>
+    <button class="hamb" id="hamb" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
+    <a href="#inicio" class="marca" aria-label="Sencia Joias, início"><svg data-mono aria-hidden="true"></svg><span>SENCIA</span></a>
+    <div class="dir">
+      <a class="ig" href="https://www.instagram.com/senciajoias/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#insta"/></svg></a>
+      <a class="btn btn-navy" href="#encomendar"><span>Encomendar</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <span class="sobre-tit fade" style="--d:.2s">Prata 950 &amp; ouro 18k · Rio de Janeiro</span>
+      <h1><span class="l"><span style="--d:.35s">Em cada peça,</span></span><span class="l"><span style="--d:.5s">uma <em>memória</em></span></span><span class="l"><span style="--d:.65s">eterna <span class="estrela" style="font-size:.4em;vertical-align:.9em">✦</span></span></span></h1>
+      <p class="lead fade" style="--d:1s">Joias femininas e alianças feitas à mão, sob medida, para celebrar histórias, conquistas e novas fases. Do Rio de Janeiro para todo o Brasil.</p>
+      <div class="ctas fade" style="--d:1.15s">
+        <a class="btn btn-navy" href="#colecao"><span>Conhecer a coleção</span><svg><use href="#seta"/></svg></a>
+        <a class="btn btn-linha" data-zap="Olá! Vim pelo site da Sencia e gostaria de encomendar uma joia." href="#" target="_blank" rel="noopener"><svg><use href="#zap"/></svg><span>Falar no WhatsApp</span></a>
+      </div>
+      <div class="selos fade" style="--d:1.35s">
+        <div><b>Ouro 18k</b>e prata 950</div>
+        <div><b>Sob medida</b>do 3D à joia</div>
+        <div><b>Todo o Brasil</b>envio seguro</div>
+      </div>
+    </div>
+    <div class="hero-vis">
+      <div class="arco hv-1"><video src="video/organica.mp4" poster="video/organica.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Cliente mostrando a aliança orgânica em ouro 18k"></video></div>
+      <div class="hv-2"><img src="img/aliancas-ouro.jpg" alt="Par de alianças em ouro 18k"></div>
+      <svg class="hv-anel" viewBox="0 0 150 150" aria-hidden="true"><defs><path id="circ" d="M75 75m-58 0a58 58 0 1 1 116 0a58 58 0 1 1-116 0"/></defs><circle cx="75" cy="75" r="72" fill="#FBF8F2"/><text><textPath href="#circ">feito à mão · sob medida · sencia joias ·</textPath></text><text x="75" y="84" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:26px;letter-spacing:0;fill:#B8975A">✦</text></svg>
+      <span class="hv-estrela estrela" style="left:6%;top:14%;animation-delay:-1s">✦</span>
+      <span class="hv-estrela estrela" style="right:4%;bottom:6%;font-size:14px;animation-delay:-2s">✦</span>
+    </div>
+  </div>
+  <div class="rolar" aria-hidden="true">role<i></i></div>
+</section>
+
+<div class="faixa" aria-hidden="true"><div class="trilho" id="trilho"></div></div>
+
+<section class="manif" id="sobre">
+  <div class="wrap">
+    <div class="manif-foto rv">
+      <div class="arco cortina"><img src="img/alianca-organica.jpg" alt="Aliança orgânica em ouro 18k" loading="lazy" data-par></div>
+      <div class="tag"><small>Finalização do dia</small>Aliança orgânica 3mm</div>
+    </div>
+    <div class="rv">
+      <span class="sobre-tit">A Sencia</span>
+      <h2 class="split">Joias que carregam <em>histórias</em></h2>
+      <p class="citacao">“Uma das partes mais bonitas do que faço é acompanhar a criação de uma joia sabendo que, em algum momento, ela vai carregar uma história, celebrar uma conquista ou marcar uma <em>nova fase</em> na vida de alguém.”</p>
+      <p class="lead">Cada peça da Sencia nasce de uma conversa. Do desenho à finalização, acompanhamos cada etapa para que a joia fique exatamente como você imaginou.</p>
+      <div class="assin"><svg data-mono aria-hidden="true"></svg><span><b>Andressa</b>@andressaraujjo · criadora da Sencia</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="colecao" id="colecao">
+  <div class="wrap">
+    <div class="col-head rv">
+      <div><span class="sobre-tit">Coleção</span><h2 class="split" style="margin-top:16px">Peças <em>queridas</em></h2></div>
+      <p class="lead">Algumas das joias que mais saem do nosso ateliê. Todas podem ser personalizadas: tamanho, espessura, metal e pedra.</p>
+    </div>
+    <div class="prods">
+      <article class="prod rv"><a class="foto" data-zap="Olá! Tenho interesse na Aliança Orgânica 3mm em ouro 18k." href="#" target="_blank" rel="noopener"><img src="img/alianca-organica.jpg" alt="Aliança orgânica 3mm em ouro 18k" loading="lazy"><span class="metal">Ouro 18k</span><span class="ver">Encomendar</span></a><h3>Aliança Orgânica 3mm</h3><p>Textura orgânica, feita à mão</p><div class="preco">10x R$ 559,70 <small>ou 10% off no Pix</small></div></article>
+      <article class="prod rv"><a class="foto" data-zap="Olá! Tenho interesse no Solitário com topázio oval em ouro 18k." href="#" target="_blank" rel="noopener"><img src="img/solitario.jpg" alt="Solitário em ouro 18k" loading="lazy"><span class="metal">Ouro 18k</span><span class="ver">Encomendar</span></a><h3>Solitário com topázio</h3><p>Topázio oval, aro delicado</p><div class="preco">R$ 1.593,90 <small>à vista</small></div></article>
+      <article class="prod rv"><a class="foto" data-zap="Olá! Tenho interesse no colar em prata da Sencia." href="#" target="_blank" rel="noopener"><img src="img/colar-caixa.jpg" alt="Colar em prata com pingente na caixa da Sencia" loading="lazy"><span class="metal">Prata</span><span class="ver">Encomendar</span></a><h3>Colares em prata</h3><p>Com turmalina, topázio ou pingentes</p><div class="preco">a partir de R$ 359 <small>à vista</small></div></article>
+      <article class="prod rv"><a class="foto" data-zap="Olá! Gostaria de fazer alianças sob medida com a Sencia." href="#" target="_blank" rel="noopener"><img src="img/aliancas-par.jpg" alt="Par de alianças em ouro 18k" loading="lazy"><span class="metal">Ouro 18k · Prata 950</span><span class="ver">Encomendar</span></a><h3>Alianças sob medida</h3><p>Do modelo slim ao abaulado</p><div class="preco">sob orçamento</div></article>
+    </div>
+    <div class="pagto rv">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg>Até 10x no cartão</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3l3 3-3 3-3-3zM12 15l3 3-3 3-3-3zM3 12l3-3 3 3-3 3zM15 12l3-3 3 3-3 3z"/></svg>10% de desconto no Pix</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>Envio para todo o Brasil</span>
+    </div>
+  </div>
+</section>
+
+<section class="alian" id="aliancas">
+  <div class="brilhos" id="brilhos" aria-hidden="true"></div>
+  <div class="wrap al-grid">
+    <div class="al-vis rv">
+      <div class="arco cortina"><video data-auto src="video/aliancas.mp4" poster="video/aliancas.jpg" muted loop playsinline preload="none" aria-label="Alianças de casamento em ouro 18k"></video></div>
+      <div class="mini m1 cortina-r" style="--d:.4s"><img src="img/aliancas-quatro.jpg" alt="Alianças em ouro e prata" loading="lazy"></div>
+      <div class="mini m2 cortina-r" style="--d:.7s"><img src="img/aliancas-ouro.jpg" alt="Alianças em ouro 18k" loading="lazy"></div>
+    </div>
+    <div class="rv">
+      <span class="sobre-tit">Alianças</span>
+      <h2 class="split" style="margin:16px 0 22px">Para o <em>sim</em> mais importante</h2>
+      <p class="lead">Alianças de casamento e noivado em ouro 18k, criadas a partir da medida, do formato e do conforto que vocês imaginaram.</p>
+      <ul class="al-lista">
+        <li><span>i.</span><div><b>Modelo do seu jeito</b><small>Slim, orgânica, abaulada ou mais robusta. Você escolhe a espessura e o acabamento.</small></div></li>
+        <li><span>ii.</span><div><b>Prova em prata</b><small>Antes do ouro, fazemos um molde em prata para vocês experimentarem e aprovarem.</small></div></li>
+        <li><span>iii.</span><div><b>Produção definitiva em ouro 18k</b><small>Com tudo aprovado, a aliança ganha vida no metal definitivo.</small></div></li>
+      </ul>
+      <a class="btn btn-navy" data-zap="Olá! Gostaria de um orçamento de alianças de casamento em ouro 18k." href="#" target="_blank" rel="noopener"><span>Orçar minhas alianças</span><svg><use href="#seta"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="sob-medida">
+  <div class="wrap">
+    <div class="proc-head rv">
+      <span class="sobre-tit">Sob medida</span>
+      <h2 class="split" style="margin-top:16px">Do primeiro rascunho à <em>sua joia</em></h2>
+      <p class="lead">Você acompanha o processo e participa de cada escolha, antes mesmo de a sua joia ganhar vida.</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc-video rv"><video data-auto src="video/criacao.mp4" poster="video/criacao.jpg" muted loop playsinline preload="none" aria-label="Ourives trabalhando em uma joia no ateliê"></video><span class="selo-v"><i></i>Direto do ateliê</span></div>
+      <ol class="passos" id="passos">
+        <span class="linha"></span>
+        <li style="--d:.3s"><small>01 · Conversa</small><h3>A ideia</h3><p>Pelo WhatsApp, entendemos o que você imagina: a ocasião, o estilo e o metal.</p></li>
+        <li style="--d:.8s"><small>02 · Modelagem 3D</small><h3>O projeto</h3><p>Visualizamos a peça em detalhes e ajustamos formato, espessura e proporções.</p></li>
+        <li style="--d:1.3s"><small>03 · Aprovação</small><h3>Do seu jeito</h3><p>Ajustamos o que for preciso até a joia ficar exatamente como você sonhou.</p></li>
+        <li style="--d:1.8s"><small>04 · Produção e envio</small><h3>A joia</h3><p>Produzimos à mão em prata 950 ou ouro 18k e enviamos com todo o cuidado.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="hist" id="historias">
+  <div class="wrap">
+    <div class="hist-head rv">
+      <div><span class="sobre-tit">Histórias</span><h2 class="split" style="margin-top:16px">Algumas alianças são <em>sentidas</em></h2></div>
+      <blockquote>“Ver essas fotos foi como revisitar um capítulo que, de alguma forma, também vivemos.”<small>Laís &amp; Luiz · alianças Sencia</small></blockquote>
+    </div>
+    <div class="mural" id="mural">
+      <figure class="rv"><img src="img/casamento-5.jpg" alt="Noivos caminhando após o casamento" loading="lazy"></figure>
+      <figure class="rv"><img src="img/casamento-2.jpg" alt="Alianças em porta-joias com convite de casamento" loading="lazy"></figure>
+      <figure class="rv"><img src="img/casamento-4.jpg" alt="Noivo colocando a aliança na noiva" loading="lazy"></figure>
+      <figure class="rv fb"><img src="img/feedback-rebeca-diogo.jpg" alt="Feedback de Rebeca e Diogo, casamento em 10/01/2026" loading="lazy"></figure>
+      <figure class="rv"><img src="img/casamento-1.jpg" alt="Casal abraçado no dia do casamento" loading="lazy"></figure>
+      <figure class="rv"><img src="img/casamento-7.jpg" alt="Detalhe de aliança em close" loading="lazy"></figure>
+      <figure class="rv"><img src="img/casamento-9.jpg" alt="Casal dançando em preto e branco" loading="lazy"></figure>
+      <figure class="rv"><img src="img/casamento-3.jpg" alt="Noiva beijando a mão do noivo" loading="lazy"></figure>
+    </div>
+    <p class="credito">Fotos do casamento de Laís &amp; Luiz por @julianaramosfotografia</p>
+  </div>
+</section>
+
+<section class="reels" id="bastidores">
+  <div class="wrap">
+    <div class="reels-head rv">
+      <div><span class="sobre-tit">Vocês</span><h2 class="split" style="margin-top:16px">Sencia no <em>dia a dia</em></h2></div>
+      <div class="reel-nav"><button id="r-ant" aria-label="Anterior"><svg style="transform:scaleX(-1)"><use href="#seta"/></svg></button><button id="r-prox" aria-label="Próximo"><svg><use href="#seta"/></svg></button></div>
+    </div>
+  </div>
+  <div class="reel-trilho" id="reels">
+    <figure class="reel"><video data-auto src="video/organica.mp4" poster="video/organica.jpg" muted loop playsinline preload="none"></video><figcaption><small>Aliança orgânica</small>Simplesmente perfeita</figcaption></figure>
+    <figure class="reel"><video data-auto src="video/favoritas.mp4" poster="video/favoritas.jpg" muted loop playsinline preload="none"></video><figcaption><small>Favoritas</small>Sempre comigo</figcaption></figure>
+    <figure class="reel"><video data-auto src="video/presente.mp4" poster="video/presente.jpg" muted loop playsinline preload="none"></video><figcaption><small>Presente</small>Presentear com joias</figcaption></figure>
+    <figure class="reel"><video data-auto src="video/aliancas.mp4" poster="video/aliancas.jpg" muted loop playsinline preload="none"></video><figcaption><small>Alianças</small>Ouro 18k</figcaption></figure>
+    <figure class="reel"><img src="img/anel-dia-a-dia.jpg" alt="Anel em ouro no dia a dia" style="width:100%;height:100%;object-fit:cover" loading="lazy"><figcaption><small>No dedo</small>Para usar todo dia</figcaption></figure>
+  </div>
+</section>
+
+<section class="envio" id="envios">
+  <div class="wrap env-grid">
+    <div class="env-fotos rv">
+      <div class="a cortina-r"><video data-auto src="video/presente.mp4" poster="video/presente.jpg" muted loop playsinline preload="none" aria-label="Cliente recebendo um colar na caixa da Sencia"></video></div>
+      <div class="b cortina" style="--d:.4s"><img src="img/casamento-2.jpg" alt="Alianças em porta-joias com convite de casamento" loading="lazy"></div>
+      <svg class="carimbo" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="circ2" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs><circle cx="60" cy="60" r="58" fill="#FBF8F2"/><text style="font-family:Jost,sans-serif;font-size:8.4px;letter-spacing:.34em;fill:#2B305E;text-transform:uppercase"><textPath href="#circ2">enviado com amor · rio de janeiro ·</textPath></text><text x="60" y="72" text-anchor="middle" style="font-size:30px">💌</text></svg>
+    </div>
+    <div class="rv">
+      <span class="sobre-tit">Envios</span>
+      <h2 class="split" style="margin:16px 0 22px">Do Rio para <em>todo o Brasil</em></h2>
+      <p class="lead">Cada joia sai do ateliê embalada com carinho, pronta para presentear ou para ser aquele mimo para você mesma.</p>
+      <div class="env-lista">
+        <div><b>Embalagem presenteável</b><small>Caixa Sencia, pronta para entregar.</small></div>
+        <div><b>Envio seguro</b><small>Para qualquer cidade do país.</small></div>
+        <div><b>Acompanhamento</b><small>Você recebe atualizações até a entrega.</small></div>
+        <div><b>Atendimento próximo</b><small>Direto com a Sencia pelo WhatsApp.</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="enc" id="encomendar">
+  <div class="wrap">
+    <div class="rv">
+      <svg class="mono-grande" data-mono aria-hidden="true"></svg>
+      <span class="sobre-tit">Como encomendar</span>
+      <h2 class="split" style="margin-top:18px">Vamos criar a <em>sua</em> joia?</h2>
+      <p class="lead">As encomendas são feitas pelo nosso WhatsApp. Conte o que você imagina e a gente cuida do resto.</p>
+    </div>
+    <div class="enc-passos">
+      <div class="rv"><span>1</span><b>Chame no WhatsApp</b><small>Conte a peça, a ocasião e o seu estilo.</small></div>
+      <div class="rv"><span>2</span><b>Receba a proposta</b><small>Modelo, metal, prazo e forma de pagamento.</small></div>
+      <div class="rv"><span>3</span><b>Receba em casa</b><small>Joia finalizada e enviada para todo o Brasil.</small></div>
+    </div>
+    <a class="btn btn-navy btn-grande rv" data-zap="Olá! Vim pelo site da Sencia e gostaria de encomendar uma joia." href="#" target="_blank" rel="noopener"><svg><use href="#zap"/></svg><span>Encomendar pelo WhatsApp</span></a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <svg class="ft-mono" data-mono aria-hidden="true"></svg>
+  <div class="wrap">
+    <div class="ft">
+      <div><a href="#inicio" class="marca"><svg data-mono aria-hidden="true" style="height:40px"></svg><span>SENCIA</span></a><p>Joias em prata 950 e ouro 18k. Em cada peça, uma memória eterna. Do Rio de Janeiro para todo o Brasil.</p></div>
+      <div><h4>Navegue</h4><ul><li><a href="#colecao">Coleção</a></li><li><a href="#aliancas">Alianças</a></li><li><a href="#sob-medida">Sob medida</a></li><li><a href="#historias">Histórias</a></li></ul></div>
+      <div><h4>Contato</h4><ul><li><a data-zap="Olá! Vim pelo site da Sencia." href="#" target="_blank" rel="noopener">WhatsApp (21) 96604-7139</a></li><li><a href="https://www.instagram.com/senciajoias/" target="_blank" rel="noopener">@senciajoias</a></li><li>Rio de Janeiro · RJ</li></ul></div>
+    </div>
+    <div class="copy"><span>© <span id="ano">2026</span> Sencia Joias</span><a href="#inicio">Voltar ao topo ↑</a></div>
+  </div>
+</footer>
+
+<a class="wpp" data-zap="Olá! Vim pelo site da Sencia e gostaria de encomendar uma joia." href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg><use href="#zap"/></svg></a>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada"><button aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button><img alt=""></div>
+
+<script>
+(function(){
+  var reduz=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var WPP='5521966047139';
+  document.querySelectorAll('[data-zap]').forEach(function(a){a.href='https://wa.me/'+WPP+'?text='+encodeURIComponent(a.dataset.zap)});
+  // monograma
+  var MONO='<svg xmlns="http://www.w3.org/2000/svg" viewBox="222 240 754 719"><path fill="currentColor" d="M438.0 943.3C436.1 943.2 429.6 942.5 423.7 942.0C417.7 941.4 409.4 939.8 405.2 938.5C401.0 937.2 394.8 935.7 391.5 935.1C376.8 932.7 333.5 910.9 321.0 899.5C319.6 898.3 316.7 896.1 314.5 894.6C307.2 889.8 290.9 873.8 281.6 862.4C261.0 837.0 249.3 812.9 241.4 779.5C240.6 776.2 239.5 765.2 238.8 755.0C237.4 732.8 239.3 706.5 243.0 696.9C244.1 693.9 246.0 687.9 247.1 683.6C248.2 679.2 250.1 673.9 251.2 671.6C252.3 669.4 254.1 665.1 255.1 662.1C256.2 659.1 258.1 655.2 259.5 653.4C260.9 651.5 262.8 648.1 263.6 645.8C264.4 643.4 266.4 640.2 267.9 638.5C269.5 636.9 271.1 634.5 271.5 633.2C271.8 632.0 273.9 628.9 276.1 626.4C278.2 623.9 280.0 621.4 280.0 620.9C280.0 619.4 305.5 594.2 312.9 588.5C316.4 585.8 320.6 582.3 322.4 580.9C326.6 577.4 340.0 570.4 345.3 568.8C347.6 568.2 350.7 566.6 352.2 565.4C355.5 562.7 360.8 561.4 362.3 562.9C363.4 564.0 357.7 567.0 354.5 567.0C353.7 567.0 351.3 568.5 349.3 570.3C347.2 572.1 344.1 574.2 342.3 574.9C340.6 575.6 338.3 577.1 337.4 578.1C336.4 579.2 333.0 581.7 329.8 583.6C326.6 585.6 324.0 587.5 324.0 588.0C324.0 588.4 321.6 590.5 318.8 592.7C311.1 598.5 292.8 617.1 288.3 623.5C286.2 626.5 283.1 631.0 281.5 633.3C279.9 635.7 277.3 639.1 275.8 640.9C274.2 642.7 273.0 644.7 273.0 645.4C273.0 646.0 271.4 649.0 269.5 652.0C267.6 655.0 265.3 659.9 264.4 662.9C263.5 666.0 261.8 670.3 260.5 672.5C259.2 674.7 257.2 680.8 256.1 686.0C254.9 691.2 253.0 698.4 251.8 702.0C249.7 708.1 249.5 710.2 249.6 734.0C249.6 759.5 249.6 759.5 253.4 774.5C260.9 804.0 270.3 824.4 286.0 845.0C319.5 888.9 366.5 916.9 415.6 922.0C438.2 924.4 474.1 922.1 487.5 917.3C491.4 916.0 498.1 913.8 502.6 912.6C507.1 911.4 512.0 909.4 513.6 908.3C515.2 907.2 518.5 905.6 520.9 904.6C529.6 901.2 543.7 892.0 557.5 880.8C579.4 863.1 603.0 831.6 608.5 813.0C608.9 811.6 610.7 807.1 612.5 803.0C622.3 781.1 627.0 747.2 624.5 717.0C623.7 707.4 622.6 697.5 622.1 695.0C619.5 682.3 613.8 662.6 611.6 658.3C610.3 655.6 608.5 650.8 607.7 647.6C606.8 644.4 605.0 640.2 603.7 638.2C602.3 636.1 600.9 633.4 600.5 632.0C599.8 629.4 595.2 619.5 583.9 596.5C580.1 588.8 577.0 582.0 577.0 581.4C577.0 580.7 575.5 578.0 573.6 575.3C571.8 572.7 569.9 569.4 569.5 568.0C569.1 566.7 566.1 560.6 563.0 554.5C555.1 539.3 543.8 517.7 537.0 504.5C533.8 498.4 527.5 486.8 523.0 478.5C518.4 470.2 513.6 461.2 512.2 458.5C510.8 455.8 508.7 452.1 507.5 450.5C506.2 448.9 504.1 445.2 502.8 442.5C501.4 439.8 498.0 433.3 495.1 428.1C478.9 399.2 474.3 377.5 478.9 352.4C483.3 328.9 489.5 315.4 504.3 297.2C519.3 278.7 545.8 262.8 570.5 257.4C578.9 255.5 611.9 255.5 618.5 257.4C621.3 258.1 628.9 260.2 635.5 262.0C642.1 263.7 648.9 266.2 650.5 267.4C652.1 268.7 655.7 270.7 658.5 271.9C661.2 273.1 664.4 274.9 665.5 275.9C666.6 276.9 669.1 278.6 671.0 279.5C679.3 283.8 702.2 306.1 704.1 311.9C704.8 313.9 706.3 316.8 707.6 318.3C710.1 321.2 710.8 325.0 708.9 325.0C708.4 325.0 707.2 323.4 706.4 321.5C705.6 319.5 703.3 316.9 701.0 315.4C698.8 314.0 696.8 311.9 696.5 310.9C696.1 309.9 693.8 307.3 691.2 305.3C688.7 303.2 685.8 300.8 684.9 300.0C673.4 290.0 660.0 280.7 655.3 279.5C653.9 279.2 651.3 277.8 649.6 276.5C646.5 274.1 625.7 267.9 614.0 265.8C611.0 265.2 602.2 265.1 594.5 265.4C581.9 265.9 579.1 266.3 567.0 270.0C545.8 276.4 536.7 281.4 524.5 293.7C518.9 299.3 513.6 305.4 512.7 307.2C504.2 324.5 502.4 332.9 503.4 350.3C504.1 364.1 509.7 381.0 520.7 402.5C538.6 437.6 545.1 450.0 550.4 459.0C553.5 464.2 557.2 471.0 558.6 474.0C560.0 477.0 562.2 480.9 563.4 482.5C566.7 487.0 573.5 498.9 575.4 503.5C576.4 505.7 578.1 508.6 579.4 510.0C580.7 511.4 583.1 515.0 584.7 518.0C589.9 527.6 595.1 536.4 596.5 538.0C597.2 538.8 600.4 544.5 603.6 550.5C606.7 556.5 610.3 562.8 611.4 564.5C616.4 571.7 622.4 582.2 632.0 600.8C635.5 607.6 637.1 609.7 639.3 610.5C641.6 611.3 642.4 611.1 643.4 609.7C645.0 607.7 646.0 570.4 646.1 510.9C646.2 474.4 646.0 469.8 644.5 466.6C641.8 461.0 637.9 458.4 626.9 454.9C612.6 450.4 607.1 445.1 613.6 442.1C615.1 441.5 621.2 440.3 627.2 439.5C633.2 438.7 638.8 437.6 639.8 437.1C642.5 435.7 658.8 432.0 662.5 432.0C664.9 432.0 666.4 432.7 667.9 434.7C670.0 437.2 670.0 438.0 669.5 459.6C668.9 482.0 668.9 482.0 671.4 484.5C673.8 486.9 679.0 488.0 679.0 486.0C679.0 484.6 688.7 475.2 693.1 472.5C695.2 471.1 697.7 468.9 698.5 467.6C699.4 466.3 701.5 464.6 703.3 463.9C705.1 463.2 708.2 461.4 710.3 459.9C712.4 458.4 715.4 456.9 717.0 456.5C718.5 456.2 720.6 455.0 721.6 453.8C725.5 449.6 734.0 447.2 734.0 450.4C734.0 451.7 730.0 454.0 725.0 455.5C723.6 455.9 721.0 457.6 719.2 459.1C717.4 460.7 715.5 462.0 715.0 462.0C714.5 462.0 711.5 464.3 708.5 467.0C705.5 469.8 702.6 472.0 702.2 472.0C701.8 472.0 699.4 473.9 696.9 476.2C690.6 482.2 685.1 486.3 681.9 487.5C678.9 488.6 672.5 497.3 670.5 503.1C669.5 505.9 669.2 519.5 669.1 561.0C669.0 590.8 668.8 615.6 668.5 616.0C668.2 616.5 667.8 643.6 667.5 676.2C667.2 708.8 666.8 741.4 666.5 748.5C665.9 761.8 662.9 780.9 660.5 786.6C659.8 788.3 658.0 793.9 656.6 799.0C655.1 804.1 652.6 810.8 651.1 813.9C649.5 817.0 647.7 821.3 647.0 823.4C646.3 825.6 644.3 829.3 642.4 831.6C640.6 834.0 638.8 836.9 638.5 838.1C637.6 840.9 626.3 857.6 620.7 864.3C606.2 882.0 582.9 902.5 567.0 911.7C558.8 916.4 540.7 925.7 537.9 926.5C536.6 926.9 531.7 928.7 527.0 930.5C522.3 932.3 514.9 934.5 510.5 935.5C506.1 936.4 498.2 938.2 493.0 939.6C479.7 942.9 452.8 944.8 438.0 943.3ZM924.6 841.8C915.9 836.8 912.6 831.8 912.2 822.5C911.7 813.7 913.0 809.5 917.9 803.2C920.0 800.6 922.2 797.5 922.8 796.3C924.8 792.6 924.5 569.9 922.4 550.0C920.1 527.4 916.1 511.6 909.4 498.5C905.4 490.8 902.8 486.3 900.7 483.5C899.5 481.9 897.4 478.9 896.0 477.0C889.8 468.3 866.7 449.9 860.1 448.4C858.7 448.0 854.1 446.3 850.0 444.5C845.9 442.7 838.7 440.5 834.0 439.7C829.3 438.8 819.9 437.1 813.0 435.9C798.0 433.2 796.3 432.6 800.5 431.0C804.4 429.4 835.7 430.6 845.6 432.6C853.4 434.2 872.5 440.7 879.3 444.1C897.1 453.0 923.0 478.1 928.7 491.9C929.6 493.9 931.1 496.7 932.2 498.2C934.1 500.9 935.5 505.1 940.6 523.0C942.0 528.1 944.0 540.4 945.5 553.8C948.0 576.0 948.0 576.0 948.0 684.5C947.9 764.6 948.2 793.6 949.1 795.3C949.7 796.5 952.1 799.7 954.3 802.4C959.3 808.4 960.9 812.8 961.0 820.7C961.0 828.3 960.1 830.8 955.4 836.0C950.3 841.7 944.9 844.2 937.0 844.7C931.1 845.1 930.0 844.8 924.6 841.8ZM412.8 567.8C410.2 567.1 407.1 564.7 402.0 559.4C393.6 550.6 393.3 548.8 398.2 537.2C403.8 523.6 408.9 520.0 422.3 520.0C431.0 520.0 434.5 521.5 440.3 527.9C450.1 538.9 449.2 551.7 437.7 563.2C432.4 568.6 422.5 570.4 412.8 567.8ZM762.0 437.0C762.0 435.1 767.0 434.0 775.1 434.0C783.9 434.0 785.3 435.2 778.6 436.9C773.0 438.3 762.0 438.4 762.0 437.0Z"/></svg>';
+  document.querySelectorAll('svg[data-mono]').forEach(function(s){var t=document.createElement('div');t.innerHTML=MONO;var src=t.firstChild;s.setAttribute('viewBox',src.getAttribute('viewBox'));s.innerHTML=src.innerHTML});
+
+  var h=document.getElementById('topo'),menu=document.getElementById('menu'),hb=document.getElementById('hamb');
+  function sc(){h.classList.toggle('solid',scrollY>30)}sc();addEventListener('scroll',sc,{passive:true});
+  hb.addEventListener('click',function(){var on=menu.classList.toggle('on');hb.setAttribute('aria-expanded',on)});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('on')})});
+  document.getElementById('ano').textContent=new Date().getFullYear();
+
+  var f=['Prata 950','Ouro 18k','Alianças sob medida','Feito à mão','Modelagem 3D','Envio para todo o Brasil','Em cada peça, uma memória eterna'];
+  var x=f.map(function(t){return '<span>'+t+'</span>'}).join('');document.getElementById('trilho').innerHTML=x+x;
+
+  // brilhos
+  var br=document.getElementById('brilhos');for(var i=0;i<18;i++){var e=document.createElement('i');e.textContent='✦';e.style.cssText='left:'+(Math.random()*100)+'%;top:'+(Math.random()*100)+'%;font-size:'+(6+Math.random()*14)+'px;--t:'+(2.5+Math.random()*3)+'s;--dl:'+(-Math.random()*4)+'s';br.appendChild(e)}
+
+  // títulos palavra por palavra
+  document.querySelectorAll('h2.split').forEach(function(hh){var i=0;(function q(n){[].slice.call(n.childNodes).forEach(function(c){if(c.nodeType===3){var fr=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(function(p){if(!p)return;if(/^\s+$/.test(p)){fr.appendChild(document.createTextNode(p));return}var w=document.createElement('span');w.className='p';var s=document.createElement('span');s.textContent=p;s.style.setProperty('--i',i++);w.appendChild(s);fr.appendChild(w)});c.parentNode.replaceChild(fr,c)}else if(c.nodeType===1)q(c)})})(hh)});
+
+  // revelar
+  ['.prods','.enc-passos','.mural','.env-lista'].forEach(function(g){var w=document.querySelector(g);if(w)[].slice.call(w.children).forEach(function(c,k){c.style.setProperty('--d',(k%4*0.12)+'s')})});
+  var io='IntersectionObserver' in window&&!reduz?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'}):null;
+  document.querySelectorAll('.rv,.passos').forEach(function(el){io?io.observe(el):el.classList.add('in')});
+  var cort=[].slice.call(document.querySelectorAll('.cortina,.cortina-r'));
+  function chC(){cort=cort.filter(function(c){var r=c.getBoundingClientRect();if(reduz||(r.top<innerHeight*.88&&r.bottom>0)){c.classList.add('in');return false}return true})}
+  chC();addEventListener('scroll',function(){requestAnimationFrame(chC)},{passive:true});
+
+  // vídeos tocam só quando visíveis
+  if('IntersectionObserver' in window){var vio=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){if(v.preload==='none')v.preload='auto';var p=v.play();if(p&&p.catch)p.catch(function(){})}else v.pause()})},{threshold:.25});document.querySelectorAll('video[data-auto]').forEach(function(v){vio.observe(v)})}
+
+  // parallax suave
+  if(!reduz){var pars=[].slice.call(document.querySelectorAll('[data-par]')),tk=false;function px(){pars.forEach(function(el){var r=el.parentNode.getBoundingClientRect();el.style.setProperty('--py',((r.top+r.height/2-innerHeight/2)*-.06).toFixed(1)+'px')});tk=false}addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(px)}},{passive:true});px()}
+
+  // reels navegação
+  var rt=document.getElementById('reels');
+  document.getElementById('r-prox').addEventListener('click',function(){rt.scrollBy({left:320,behavior:'smooth'})});
+  document.getElementById('r-ant').addEventListener('click',function(){rt.scrollBy({left:-320,behavior:'smooth'})});
+
+  // lightbox
+  var lb=document.getElementById('lb'),li=lb.querySelector('img');
+  document.querySelectorAll('.mural figure').forEach(function(fg){fg.addEventListener('click',function(){var im=fg.querySelector('img');li.src=im.src;li.alt=im.alt;lb.classList.add('on')})});
+  lb.addEventListener('click',function(e){if(e.target!==li)lb.classList.remove('on')});
+  addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+})();
+</script>
+</body>
+</html>
